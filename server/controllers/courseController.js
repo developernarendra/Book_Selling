@@ -6,6 +6,9 @@ const getAllCourses = async (req, res) => {
   res.json(courses);
 };
 
+function hello(){
+  console.log("Hello i am SHristi")
+}
 const purchaseCourse = async (req, res) => {
   const courseId = req.params.id;
   const user = await User.findById(req.user._id);
